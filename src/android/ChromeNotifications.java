@@ -76,7 +76,7 @@ public class ChromeNotifications extends CordovaPlugin {
         }
     }
 
-    @Override
+//    @Override
     public void pluginInitialize() {
         if (pluginInstance == null && cordova.getActivity().getIntent().hasExtra(MAIN_ACTIVITY_LABEL)) {
             cordova.getActivity().moveTaskToBack(true);
@@ -85,17 +85,17 @@ public class ChromeNotifications extends CordovaPlugin {
         notificationManager = (NotificationManager) cordova.getActivity().getSystemService(Context.NOTIFICATION_SERVICE);
     }
 
-    @Override
+//    @Override
     public void onReset() {
         messageChannel = null;
     }
 
-    @Override
+//    @Override
     public void onDestroy() {
         messageChannel = null;
     }
 
-    @Override
+//    @Override
     public boolean execute(String action, CordovaArgs args, final CallbackContext callbackContext) throws JSONException {
         if ("create".equals(action)) {
             create(args, callbackContext);
