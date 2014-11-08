@@ -95,7 +95,7 @@ public class ChromeNotifications extends CordovaPlugin {
         messageChannel = null;
     }
 
-//    @Override
+    @Override
     public boolean execute(String action, CordovaArgs args, final CallbackContext callbackContext) throws JSONException {
         if ("create".equals(action)) {
             create(args, callbackContext);
