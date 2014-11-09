@@ -85,12 +85,12 @@ public class ChromeNotifications extends CordovaPlugin {
         notificationManager = (NotificationManager) cordova.getActivity().getSystemService(Context.NOTIFICATION_SERVICE);
     }
 
-//    @Override
+    @Override
     public void onReset() {
         messageChannel = null;
     }
 
-//    @Override
+    @Override
     public void onDestroy() {
         messageChannel = null;
     }
